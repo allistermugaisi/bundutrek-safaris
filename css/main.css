@@ -3299,12 +3299,16 @@ html {
   --tw-bg-opacity: 0.2;
 }
 
-.bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dgisuffs0\/image\/upload\/q_auto\/v1683270721\/bundutrek-safaris\/39b756_8d645ec924074f698c02bdc5594e28ff_mv2_d_4412_2868_s_4_2\.jpg_fmx2v3\.webp\'\)\] {
-  background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683270721/bundutrek-safaris/39b756_8d645ec924074f698c02bdc5594e28ff_mv2_d_4412_2868_s_4_2.jpg_fmx2v3.webp');
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
 }
 
-.bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dgisuffs0\/image\/upload\/q_auto\/v1683525739\/bundutrek-safaris\/mara-130_ydnvw4\.jpg\'\)\] {
-  background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-130_ydnvw4.jpg');
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
 }
 
 .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dgisuffs0\/image\/upload\/q_auto\/v1683523811\/bundutrek-safaris\/mara-164_fti9zt\.jpg\'\)\] {
@@ -3317,14 +3321,6 @@ html {
 
 .bg-\[center_bottom_4rem\] {
   background-position: center bottom 4rem;
-}
-
-.bg-\[center_bottom_2rem\] {
-  background-position: center bottom 2rem;
-}
-
-.bg-\[center_bottom_\.5rem\] {
-  background-position: center bottom .5rem;
 }
 
 .bg-no-repeat {
@@ -3715,5 +3711,10 @@ html {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
