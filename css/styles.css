@@ -6,6 +6,89 @@ html {
 	border-radius: 1rem;
 }
 
+/* About Services */
+.about-card {
+	height: 250px;
+	background-color: #f99;
+}
+.about-card:nth-child(1) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683527519/bundutrek-safaris/mara-57_hf3vr2.jpg');
+}
+.about-card:nth-child(2) {
+	background-color: #2b3f69;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_2495_j3itzc.jpg');
+}
+.about-card:nth-child(3) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_8141_x0lmfl.jpg');
+}
+.about-card:nth-child(4) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-75_woxkbd.jpg');
+}
+
+.magical-card {
+	height: 250px;
+	background-color: #f99;
+}
+.magical-card:nth-child(1) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-130_ydnvw4.jpg');
+}
+.magical-card:nth-child(2) {
+	background-color: #2b3f69;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683526920/bundutrek-safaris/mara-33_ifeh4i.jpg');
+}
+.magical-card:nth-child(3) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529462/bundutrek-safaris/Elephants-mock-fighting-in-Samburu-National-Reserve_qsf7uz.jpg');
+}
+.magical-card:nth-child(4) {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_2003_hkinyq.jpg');
+}
+
+/* Kenyan Map */
+#container {
+	height: 500;
+	min-width: 45vw;
+	max-width: 116vw;
+	margin: 0 auto;
+}
+
+.loading {
+	margin-top: 10em;
+	text-align: center;
+	color: gray;
+}
+
 /* CSS Multiple Whatsapp Chat */
 .whatsapp-name {
 	font-size: 16px;

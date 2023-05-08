@@ -21,6 +21,14 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		/>
 
+		<!-- Leaflet css -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+			integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+			crossorigin=""
+		/>
+
 		<title>Bundutrek Safaris</title>
 	</head>
 	<body>
@@ -63,7 +71,7 @@
 						<li>
 							<a
 								class="text-black text-sm sm:text-base hover:opacity-80"
-								href="#"
+								href="/blog.html"
 								>Blog</a
 							>
 						</li>
@@ -97,7 +105,7 @@
 		</div>
 
 		<section class="container mx-auto py-14 px-7 sm:px-0">
-			<div class="grid md:grid-cols-2 gap-8 min-h-[652px]">
+			<div class="grid lg:grid-cols-2 gap-8 min-h-[652px]">
 				<div class="relative">
 					<img
 						class="mb-4 rounded-2xl"
@@ -184,6 +192,80 @@
 			</div>
 		</section>
 
+		<!-- Our Vehicles -->
+		<section class="mb-12">
+			<div class="px-3 sm:px-0 grid lg:grid-cols-2 gap-8 container mx-auto">
+				<div class="grid grid-cols-2 gap-2">
+					<div class="about-card"></div>
+					<div class="about-card"></div>
+					<div class="about-card"></div>
+					<div class="about-card"></div>
+				</div>
+				<div class="flex flex-col justify-center items-start">
+					<div>
+						<h4 class="text-orange-500 uppercase font-semibold text-lg">
+							Vehicles
+						</h4>
+						<h2
+							class="text-2xl md:text-6xl tracking-wide text-black font-semibold"
+						>
+							Our Vehicles
+						</h2>
+					</div>
+					<div class="border-2 border-orange-500 w-10 my-6"></div>
+					<div class="mt-4">
+						<p class="text-lg">
+							Our vehicles are 4wheel drive jeeps that are customised to fit
+							clients style of safari.On our fleet, we have specially built
+							photographic vehicles and classic adventurous jeeps.All are
+							available on request.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Magical Kenya -->
+		<section class="mb-12">
+			<div class="px-3 sm:px-0 grid lg:grid-cols-2 gap-8 container mx-auto">
+				<div class="flex flex-col justify-center items-start">
+					<div>
+						<h4 class="text-orange-500 uppercase font-semibold text-lg">
+							Visit Kenya
+						</h4>
+						<h2
+							class="text-2xl md:text-6xl tracking-wide text-black font-semibold"
+						>
+							Magical Kenya
+						</h2>
+					</div>
+					<div class="border-2 border-orange-500 w-10 my-6"></div>
+					<div class="mt-4">
+						<p class="text-lg">
+							Kenya lies 762metres above sea level which makes it home to loads
+							of diverse cultures and full of magical experiences.Tourists enjoy
+							a year-round experience of exhilarating wildlife, breathtaking
+							landscapes, tranquility of Kenya’s coast, enriching cultures and
+							the warmth of the Kenyan people. Kenya also offers a rich historic
+							background, with numerous historical sites all over the
+							country.This are some of of the famous touristic destinations on
+							map.
+						</p>
+					</div>
+				</div>
+				<div class="grid grid-cols-2 gap-2">
+					<div class="magical-card"></div>
+					<div class="magical-card"></div>
+					<div class="magical-card"></div>
+					<div class="magical-card"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="min-h-[180px]">
+			<div id="container"></div>
+		</section>
+
 		<section class="px-7 sm:px-0">
 			<div class="pt-14">
 				<p class="text-center text-orange-500 uppercase font-semibold text-lg">
@@ -262,9 +344,11 @@
 							<a href="/about.html">About us</a>
 						</li>
 						<li class="text-[#000] hover:opacity-80">
-							<a href="#popular-trips">Popular trips</a>
+							<a href="/#popular-trips">Popular trips</a>
 						</li>
-						<li class="text-[#000] hover:opacity-80"><a href="#">Blog</a></li>
+						<li class="text-[#000] hover:opacity-80">
+							<a href="/blog.html">Blog</a>
+						</li>
 						<li class="text-[#000] hover:opacity-80">
 							<a href="/contact.html">Contact</a>
 						</li>
@@ -393,6 +477,9 @@
 			crossorigin="anonymous"
 		></script>
 
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
 		<!-- Script is similar to the rest of the pages except index.html -->
 		<script>
 			const navLinks = document.querySelector('.nav-links');
@@ -409,5 +496,6 @@
 				'&copy;' + year + '&nbsp; Bundutrek Safaris. Tours & safaris';
 		</script>
 		<script src="./scripts/whatsapp.js"></script>
+		<script src="./scripts/kenya.js"></script>
 	</body>
 </html>
