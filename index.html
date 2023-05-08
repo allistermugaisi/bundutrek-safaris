@@ -25,8 +25,17 @@
 	</head>
 	<body>
 		<header
-			class="relative px-7 md:px-0 h-screen bg-no-repeat bg-[center_bottom_4rem] bg-cover bg-[url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg')]"
+			class="relative px-7 md:px-0 h-screen bg-no-repeat bg-[center_bottom_4rem] bg-cover"
+			style="
+				background-image: linear-gradient(
+						rgba(245, 246, 252, 0.52),
+						rgba(0, 0, 0, 0.73)
+					),
+					url(https://res.cloudinary.com/dgisuffs0/image/upload/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg);
+			"
 		>
+			<!-- https://res.cloudinary.com/dgisuffs0/image/upload/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg -->
+			<!-- https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683543106/bundutrek-safaris/_MG_1337_xxqi3h.jpg -->
 			<nav class="flex justify-between items-center container mx-auto">
 				<div>
 					<img
@@ -36,7 +45,7 @@
 					/>
 				</div>
 				<div
-					class="z-40 nav-links rounded-b-2xl duration-500 md:static absolute bg-white md:bg-transparent bg-opacity-25 md:bg-opacity-0 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-7"
+					class="z-40 nav-links rounded-b-2xl duration-500 md:static absolute bg-white md:bg-transparent bg-opacity-100 md:bg-opacity-0 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-7"
 				>
 					<ul
 						class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
@@ -87,6 +96,22 @@
 				</div>
 			</nav>
 			<div
+				class="w-full h-[80%] md:h-[60%] md:w-1/2 mx-auto min-h-[12rem] flex justify-center items-center"
+			>
+				<div class="text-white flex flex-col items-center px-1 sm:px-4">
+					<h3 class="text-sm sm:text-xl md:text-3xl font-semibold mb-5">
+						WELCOME TO BUNDUTREK KENYA.
+					</h3>
+					<h4 class="text-xs sm:text-base md:text-base text-center">
+						Bundutrek Safaris offers privately guided and handcrafted safaris in
+						East Africa. By combining our intimate knowledge of touristic
+						destinations, we are able to offer our guests, a wide variety of
+						services that are detail-oriented, based on their personal
+						preferences.
+					</h4>
+				</div>
+			</div>
+			<div
 				class="bg-white absolute bottom-[-4rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto h-[8rem] rounded-xl flex items-center justify-center shadow-xl"
 			>
 				<h4>Places to go</h4>
@@ -95,7 +120,7 @@
 
 		<section class="mt-28 mb-8 container mx-auto">
 			<div class="grid sm:grid-cols-2 gap-4 px-7 sm:px-0">
-				<div class="w-3/4">
+				<div class="w-full sm:w-3/4">
 					<h3 class="text-2xl sm:text-4xl font-semibold">About us</h3>
 					<h4 class="my-6 text-lg sm:text-2xl font-medium">
 						We organize interesting trips to your dream destinations
@@ -240,7 +265,7 @@
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title">
-							Fauna of the desert
+							Tracking the Mighty Lion
 							<div class="badge badge-success">
 								<span class="text-white">12 days</span>
 							</div>
@@ -266,8 +291,16 @@
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Wild safari ride</h2>
-							<p>An unforgettable trip through the desert of Kenya.</p>
+							<h2 class="card-title">
+								Lion's Tale - An Epic Adventure in the African Wild
+							</h2>
+							<p>
+								For the more adventurous traveler, we offer expeditions into
+								lion country, where you can track these magnificent beasts
+								through rugged terrain and witness them in action. Whether it's
+								stalking prey or playfully interacting with each other, you'll
+								be awed by the raw energy and vitality of these amazing animals.
+							</p>
 							<div class="card-actions justify-end">
 								<button class="btn bg-green-400 hover:bg-green-500">
 									Book Now
@@ -331,8 +364,13 @@
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Deserts of Africa</h2>
-							<p>Drive by car through the desert of Africa.</p>
+							<h2 class="card-title">Rhino Safari - A Horned Adventure</h2>
+							<p>
+								Welcome to the world of rhino adventures! Get ready to embark on
+								a thrilling journey through the wild and learn all about these
+								magnificent horned beasts. Come along on a rhino adventure and
+								discover the wonders of these incredible creatures for yourself!
+							</p>
 							<div class="card-actions justify-end">
 								<button class="btn bg-green-400 hover:bg-green-500">
 									Book Now
@@ -367,7 +405,7 @@
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683524148/bundutrek-safaris/mara-162_20.36.35_atwwfh.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-130_ydnvw4.jpg"
 								alt=""
 							/>
 						</div>
@@ -396,10 +434,16 @@
 							/>
 						</figure>
 						<div class="card-body">
-							<h2 class="card-title">Elephants on African safari</h2>
+							<h2 class="card-title">
+								Tusk Tales - Adventures with the Gentle Giants
+							</h2>
 							<p>
-								We will see flocks of wild elephants, feed the elephants and
-								take a picture at sunset.
+								For the adventurous spirit, we offer expeditions into the heart
+								of elephant country, where you can observe herds of these gentle
+								giants in action. Watch as they interact with each other, play
+								with their young, and communicate with low rumbles and trumpet
+								calls. Marvel at their strength as they effortlessly move fallen
+								trees or uproot plants with their trunks.
 							</p>
 							<div class="card-actions justify-end">
 								<button class="btn bg-green-400 hover:bg-green-500">
@@ -414,42 +458,42 @@
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683526920/bundutrek-safaris/mara-33_ifeh4i.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_2003_hkinyq.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683524031/bundutrek-safaris/mara-152_xv3pjx.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529849/bundutrek-safaris/_MG_4376-2_leybhw.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683526919/bundutrek-safaris/mara-17_jkey8b.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529849/bundutrek-safaris/_MG_2825_xxxdtr.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683524148/bundutrek-safaris/mara-162_20.36.35_atwwfh.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528315/bundutrek-safaris/ecd97-samburu-northern-kenya-safari_wuh4ul.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683526920/bundutrek-safaris/mara-67_p9iyn2.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528314/bundutrek-safaris/_MG_9338_kks7ee.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="h-24">
 							<img
 								class="h-full w-full bg-cover rounded-xl"
-								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683526920/bundutrek-safaris/mara-65_qr8b8f.jpg"
+								src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528314/bundutrek-safaris/_MG_9266_qtfmqc.jpg"
 								alt=""
 							/>
 						</div>
@@ -467,7 +511,7 @@
 					<div class="md:flex md:flex-wrap md:-mx-4 mb-4">
 						<div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
 							<div
-								class="testimonial p-6 border-2 border-solid flex hover:border-red-400 hover:bg-red-100 transition-colors duration-300"
+								class="testimonial p-6 border-2 border-solid flex flex-col lg:flex-row hover:border-red-400 hover:bg-red-100 transition-colors duration-300"
 							>
 								<div
 									class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0"
@@ -497,7 +541,7 @@
 
 						<div class="md:w-1/2 md:px-4 mt-6 md:mt-0">
 							<div
-								class="testimonial p-6 border-2 border-solid flex hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300"
+								class="testimonial p-6 border-2 border-solid flex flex-col lg:flex-row hover:border-indigo-400 hover:bg-indigo-100 transition-colors duration-300"
 							>
 								<div
 									class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0"
@@ -527,7 +571,7 @@
 
 						<div class="md:w-1/2 md:px-4 mt-6">
 							<div
-								class="testimonial p-6 border-2 border-solid flex hover:border-green-400 hover:bg-green-100 transition-colors duration-300"
+								class="testimonial p-6 border-2 border-solid flex flex-col lg:flex-row hover:border-green-400 hover:bg-green-100 transition-colors duration-300"
 							>
 								<div
 									class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0"
@@ -557,7 +601,7 @@
 
 						<div class="md:w-1/2 md:px-4 mt-6">
 							<div
-								class="testimonial p-6 border-2 border-solid flex hover:border-orange-400 hover:bg-orange-100 transition-colors duration-300"
+								class="testimonial p-6 border-2 border-solid flex flex-col lg:flex-row hover:border-orange-400 hover:bg-orange-100 transition-colors duration-300"
 							>
 								<div
 									class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden mr-4 md:mr-6 flex-shrink-0"

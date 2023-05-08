@@ -3023,6 +3023,21 @@ html {
   margin-bottom: 2rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -3057,6 +3072,18 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -3095,12 +3122,28 @@ html {
   height: 100vh;
 }
 
+.h-\[80\%\] {
+  height: 80%;
+}
+
 .min-h-\[40vh\] {
   min-height: 40vh;
 }
 
 .min-h-\[652px\] {
   min-height: 652px;
+}
+
+.min-h-\[4rem\] {
+  min-height: 4rem;
+}
+
+.min-h-\[8rem\] {
+  min-height: 8rem;
+}
+
+.min-h-\[12rem\] {
+  min-height: 12rem;
 }
 
 .w-10 {
@@ -3125,6 +3168,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-xs {
@@ -3291,28 +3338,51 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
-}
-
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
 }
 
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
 
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
 .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dgisuffs0\/image\/upload\/q_auto\/v1683523811\/bundutrek-safaris\/mara-164_fti9zt\.jpg\'\)\] {
   background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dgisuffs0\/image\/upload\/q_auto\/v1683543106\/bundutrek-safaris\/_MG_1337_xxqi3h\.jpg\'\)\] {
+  background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683543106/bundutrek-safaris/_MG_1337_xxqi3h.jpg');
 }
 
 .bg-cover {
@@ -3380,6 +3450,16 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -3420,6 +3500,26 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -3555,6 +3655,26 @@ html {
 }
 
 @media (min-width: 480px) {
+  .sm\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3572,6 +3692,11 @@ html {
     padding-right: 0px;
   }
 
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3585,6 +3710,16 @@ html {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -3606,6 +3741,10 @@ html {
     margin-top: 0px;
   }
 
+  .md\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3616,6 +3755,14 @@ html {
 
   .md\:h-20 {
     height: 5rem;
+  }
+
+  .md\:h-\[50\%\] {
+    height: 50%;
+  }
+
+  .md\:h-\[60\%\] {
+    height: 60%;
   }
 
   .md\:min-h-fit {
@@ -3713,8 +3860,33 @@ html {
     line-height: 1;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
