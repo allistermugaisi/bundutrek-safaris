@@ -23,103 +23,155 @@
 
 		<title>Bundutrek Safaris</title>
 	</head>
-	<body>
-		<header
-			class="relative px-7 md:px-0 h-screen bg-no-repeat bg-[center_bottom_4rem] bg-cover"
-			style="
-				background-image: linear-gradient(
-						rgba(245, 246, 252, 0.52),
-						rgba(0, 0, 0, 0.73)
-					),
-					url(https://res.cloudinary.com/dgisuffs0/image/upload/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg);
-			"
-		>
-			<!-- https://res.cloudinary.com/dgisuffs0/image/upload/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg -->
-			<!-- https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683543106/bundutrek-safaris/_MG_1337_xxqi3h.jpg -->
-			<nav class="flex justify-between items-center container mx-auto">
-				<div>
-					<img
-						class="w-16 cursor-pointer"
-						src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
-						alt="logo"
-					/>
-				</div>
-				<div
-					class="z-40 nav-links rounded-b-2xl duration-500 md:static absolute bg-white md:bg-transparent bg-opacity-100 md:bg-opacity-0 md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-7"
+
+	<body onload="slider()">
+		<div class="banner">
+			<div class="slider">
+				<img
+					id="slideImg"
+					src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg"
+					alt="bundutrek slider"
+				/>
+			</div>
+			<div class="overlay">
+				<nav
+					class="nav fixed z-40 top-0 left-0 w-screen bg-white bg-opacity-30 shadow-sm"
 				>
-					<ul
-						class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
+					<div
+						class="flex justify-between items-center container mx-auto px-7 sm:px-0"
 					>
-						<li>
-							<a
-								class="text-black md:text-white text-sm sm:text-base hover:opacity-80"
-								href="/"
-								>Home</a
+						<div>
+							<img
+								class="w-16 cursor-pointer z-10"
+								src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+								alt="logo"
+							/>
+						</div>
+						<div
+							class="z-40 nav-links shadow-md md:shadow-none rounded-b-2xl duration-500 md:static absolute bg-[#FFDCC8] md:bg-transparent bg-opacity-100 md:bg-opacity-0 md:min-h-fit min-h-[40vh] left-0 top-[-600%] md:w-auto w-full flex items-center px-7"
+						>
+							<ul
+								class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
 							>
-						</li>
-						<li>
-							<a
-								class="text-black md:text-white text-sm sm:text-base hover:opacity-80"
-								href="about.html"
-								>About us</a
-							>
-						</li>
-						<li>
-							<a
-								class="text-black md:text-white text-sm sm:text-base hover:opacity-80"
-								href="#popular-trips"
-								>Popular trips</a
-							>
-						</li>
-						<li>
-							<a
-								class="text-black md:text-white text-sm sm:text-base hover:opacity-80"
-								href="/blog.html"
-								>Blog</a
-							>
-						</li>
-						<li>
-							<a
-								class="text-black md:text-white text-sm sm:text-base hover:opacity-80"
-								href="/contact.html"
-								>Contact</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="flex items-center gap-6">
-					<ion-icon
-						onclick="onToggleMenu(this)"
-						name="menu"
-						class="text-3xl cursor-pointer md:hidden text-white"
-					></ion-icon>
-				</div>
-			</nav>
-			<div
-				class="w-full h-[80%] md:h-[60%] md:w-1/2 mx-auto min-h-[12rem] flex justify-center items-center"
-			>
-				<div class="text-white flex flex-col items-center px-1 sm:px-4">
-					<h3 class="text-base sm:text-xl md:text-3xl font-semibold mb-5">
-						WELCOME TO BUNDUTREK KENYA.
-					</h3>
-					<h4 class="text-sm sm:text-base md:text-base text-center">
-						Bundutrek Safaris offers privately guided and handcrafted safaris in
-						East Africa. By combining our intimate knowledge of touristic
-						destinations, we are able to offer our guests, a wide variety of
-						services that are detail-oriented, based on their personal
-						preferences.
-					</h4>
-				</div>
+								<li>
+									<a
+										class="text-black text-sm sm:text-base hover:opacity-80"
+										href="/"
+										>Home</a
+									>
+								</li>
+								<li>
+									<a
+										class="text-black text-sm sm:text-base hover:opacity-80"
+										href="about.html"
+										>About us</a
+									>
+								</li>
+								<li>
+									<a
+										class="text-black text-sm sm:text-base hover:opacity-80"
+										href="#popular-trips"
+										>Popular trips</a
+									>
+								</li>
+								<li>
+									<a
+										class="text-black text-sm sm:text-base hover:opacity-80"
+										href="/blog.html"
+										>Blog</a
+									>
+								</li>
+								<li>
+									<a
+										class="text-black text-sm sm:text-base hover:opacity-80"
+										href="/contact.html"
+										>Contact</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="flex items-center z-10">
+							<ion-icon
+								onclick="onToggleMenu(this)"
+								name="menu"
+								class="text-3xl cursor-pointer md:hidden text-black"
+							></ion-icon>
+						</div>
+					</div>
+				</nav>
 			</div>
-			<div
-				class="bg-white absolute bottom-[-4rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto h-[8rem] rounded-xl flex items-center justify-center shadow-xl"
-			>
-				<h4>Places to go</h4>
+		</div>
+
+		<section class="bg-green-400">
+			<div class="container mx-auto py-16">
+				<form
+					action=""
+					class="tour-search-form grid grid-cols-1 lg:grid-cols-5 sm:gap-3 items-center px-7"
+				>
+					<div class="input-wrapper flex flex-col">
+						<label for="destination" class="input-label"
+							>Search Destination*</label
+						>
+
+						<input
+							type="text"
+							name="destination"
+							id="destination"
+							required
+							placeholder="Enter Destination"
+							class="input-field"
+						/>
+					</div>
+
+					<div class="input-wrapper flex flex-col">
+						<label for="people" class="input-label">Pax Number*</label>
+
+						<input
+							type="number"
+							name="people"
+							id="people"
+							required
+							placeholder="No.of People"
+							class="input-field"
+						/>
+					</div>
+
+					<div class="input-wrapper flex flex-col">
+						<label for="checkin" class="input-label">Checkin Date**</label>
+
+						<input
+							type="date"
+							name="checkin"
+							id="checkin"
+							required
+							class="input-field"
+						/>
+					</div>
+
+					<div class="input-wrapper flex flex-col">
+						<label for="checkout" class="input-label">Checkout Date*</label>
+
+						<input
+							type="date"
+							name="checkout"
+							id="checkout"
+							required
+							class="input-field"
+						/>
+					</div>
+
+					<button
+						type="submit"
+						class="h-12 text-white bg-[#FE685F] rounded-lg shadow transition-all duration-300 ease-in-out hover:bg-red-400"
+					>
+						Inquire
+					</button>
+				</form>
 			</div>
-		</header>
+		</section>
 
 		<section class="mt-28 mb-8 container mx-auto">
-			<div class="grid sm:grid-cols-2 gap-4 px-7 sm:px-0">
+			<div class="grid lg:grid-cols-2 gap-4 px-7 sm:px-0">
 				<div class="w-full sm:w-3/4">
 					<h3 class="text-2xl sm:text-4xl font-semibold">About us</h3>
 					<h4 class="my-6 text-lg sm:text-2xl font-medium">
@@ -176,9 +228,13 @@
 			class="mt-28 mb-8 container mx-auto px-4 sm:px-0"
 			id="popular-trips"
 		>
-			<h3 class="text-2xl sm:text-4xl font-semibold">Popular trips</h3>
-			<div class="my-8 carousel rounded-box w-full p-4 space-x-4">
-				<div class="carousel-item card w-full sm:w-96 bg-base-100 shadow-xl">
+			<h3 class="text-2xl sm:text-4xl font-semibold">
+				Suggested safari packages
+			</h3>
+			<div
+				class="my-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 rounded-box w-full p-4"
+			>
+				<div class="card w-full bg-base-100 shadow-md">
 					<figure>
 						<img
 							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529849/bundutrek-safaris/_MG_4726_orcbce.jpg"
@@ -186,17 +242,164 @@
 						/>
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title text-sm sm:text-lg">Wild safari ride</h2>
+						<h2 class="card-title text-sm sm:text-lg">Big 5 circuit</h2>
 						<div class="badge badge-success">
-							<span class="text-white">5 days</span>
+							<span class="text-white">7 days</span>
 						</div>
 						<p class="py-4">
-							An unforgettable trip through the desert of Kenya. You will see
-							wild lions and more. We will visit many wild places.
+							Drive through the famous Rift Valley which is home to the most
+							famous touristic destinations.Holds most of the beautiful lakes,
+							mountains ,plains and wildlife...
 						</p>
+						<div class="card-actions">
+							<label
+								for="my-modal-1"
+								class="btn bg-green-400 hover:bg-green-500"
+							>
+								Details
+							</label>
+						</div>
+					</div>
+					<input type="checkbox" id="my-modal-1" class="modal-toggle" />
+					<div class="modal">
+						<div class="modal-box relative">
+							<label
+								for="my-modal-1"
+								class="btn btn-sm btn-circle absolute right-2 top-2"
+								>✕</label
+							>
+							<h3 class="text-lg font-bold">Big 5 circuit</h3>
+							<p class="py-4">
+								Drive through the famous Rift Valley which is home to the most
+								famous touristic destinations.Holds most of the beautiful lakes,
+								mountains ,plains and wildlife
+							</p>
+							<div class="py-4">
+								<h4 class="font-semibold">
+									ITINERARY DAY 1 - NAIROBI TO AMBOSELI
+								</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Drive Southeast via Mombasa road which is Kenyas busiest
+										road.Loads of economic, farming activities along the road.
+									</li>
+									<li>
+										Arrive at hotel for lunch and spend evening for leisure.
+									</li>
+									<li>
+										Set off for evening safari. Great photographic opportunity.
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">
+									DAY 2 - AMBOSELI MORNING AND EVENING DRIVE
+								</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast ,set off for the early morning safari and
+										return for early lunch.
+									</li>
+									<li>After leisure, set off for evening safari.</li>
+									<li>
+										Drive back to lodge after sundowner for dinner and rest.
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 3 - AMBOSELI TO NAIVASHA</h4>
+								<ul class="space-y-2 mt-4">
+									<li>Early breakfast, sett off for early morning safari.</li>
+									<li>
+										Drive to Naivasha.Stop over at the Mai Mahiu for scenic
+										views of The Gregorian Rift Valley. Great farming
+										activities, wildlife and scenic views along the road.
+									</li>
+									<li>Arrive hotel for lunch and refreshments.</li>
+									<li>
+										Set off for boat safari and crescent island visit.Great
+										birding photographic experience.
+									</li>
+									<li>Drive back to Hotel for Dinner and rest.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 4 - NAIVASHA TO NAKURU</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Drive up to Nakuru and arrive at the hotel/lodge for lunch
+										and refreshment.
+									</li>
+									<li>
+										Set off for evening safari.Great opportunity to view White
+										Rhinos and loads of wildlife concentrated near the lake.
+									</li>
+									<li>Drive to hotel for late dinner and early bed.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 5 - NAKURU TO MAASAI MARA</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast, drive through the Mau route to the famous
+										Mara.Great farming activities and scenic views of the Mau
+										escarpments.
+									</li>
+									<li>
+										Arrive at the hotel for lunch and set off for evening
+										safari.Great opportunity to see cats and loads of wildlife.
+									</li>
+									<li>Head back to the hotel for dinner and rest.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 6 - FULL DAY IN MARA</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast set off for full day drive with packed
+										lunch.Visit the famous Mara river, short optional hikes
+										along the river as you view different crossing points used
+										by Wildebeests.
+									</li>
+									<li>
+										Do a bush picnic lunch and enjoy the therapy of the Savannah
+										as you enjoy your delicacy.
+									</li>
+									<li>Drive back to the hotel for dinner and rest.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 7 - MARA TO NAIROBI</h4>
+								<ul class="space-y-2 mt-4">
+									<li>After breakfast, drive to Nairobi with packed lunch.</li>
+									<li>Stop over for refreshments</li>
+									<li>Arrive Nairobi, transfer to airport.</li>
+									<li>Fly home.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">PACKAGE INCLUDES</h4>
+								<ul class="space-y-2 mt-4">
+									<li>Park entrance fees</li>
+									<li>Accommodation in comfortable luxurious lodge/hotel</li>
+									<li>Transportation in a Safari 4wd Jeep</li>
+									<li>Drinking water throughout safari</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">PACKAGES EXCLUDES</h4>
+								<ul class="space-y-2 mt-4">
+									<li>Driver’s tip</li>
+									<li>Beverages/drinks</li>
+									<li>Photography</li>
+									<li>Boat rides</li>
+									<li>Village visits</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item card w-full sm:w-96 bg-base-100 shadow-xl">
+				<div class="card w-full bg-base-100 shadow-md">
 					<figure>
 						<img
 							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_8141_x0lmfl.jpg"
@@ -204,17 +407,172 @@
 						/>
 					</figure>
 					<div class="card-body">
-						<h2 class="card-title text-sm sm:text-lg">Deserts of Africa</h2>
+						<h2 class="card-title text-sm sm:text-lg">Honey moon safari</h2>
 						<div class="badge badge-success">
 							<span class="text-white">8 days</span>
 						</div>
 						<p class="py-4">
-							Drive by car through the desert of Africa. We will see flocks of
-							wild zebras, fed the elephant and take a picture at sunset.
+							Enjoy the views and wildlife of the Northern frontier.Apart from
+							the big 5, get a chance to see the special 5 which is located in
+							Samburu...
 						</p>
+						<div class="card-actions">
+							<label
+								for="my-modal-2"
+								class="btn bg-green-400 hover:bg-green-500"
+							>
+								Details
+							</label>
+						</div>
+					</div>
+					<input type="checkbox" id="my-modal-2" class="modal-toggle" />
+					<div class="modal">
+						<div class="modal-box relative">
+							<label
+								for="my-modal-2"
+								class="btn btn-sm btn-circle absolute right-2 top-2"
+								>✕</label
+							>
+							<h3 class="text-lg font-bold">Honey moon safari</h3>
+							<p class="py-4">
+								Enjoy the views and wildlife of the Northern frontier.Apart from
+								the big 5, get a chance to see the special 5 which is located in
+								Samburu.Visit the only conservancy with Chimpanzees , White
+								Rhino conservation…Great for photography and culture.
+							</p>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 1 - NAIROBI TO SAMBURU.</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Drive Northwards via central highlands as you enjoy the
+										breaking landscapes ,coffee farms and loads of green
+										plantations.Mt Kenya can be seen on a clear day.From
+										Nanyuki, drive to Isiolo the last ‘small dusty town ‘before
+										you arrive Samburu.
+									</li>
+									<li>
+										Arrivotogrpe at hotel for lunch, refreshment and afternoon
+										leisure.
+									</li>
+									<li>
+										Sett off for evening safari at around 4pm.Clear skies in
+										Samburu mostly, great sundowner experience.
+									</li>
+									<li>
+										Drive back to lodge just at sunset for early dinner.Great
+										opportunity to watch stars.
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">
+									DAY 2 - MORNING SAFARI / EVENING SAFARI.
+								</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Enjoy sunrise and sunset while on Safaris.Good opportunity
+										to spot the ’Special 5’ when sun is not blazing.Good
+										opportunity to spot cats and loads of wildlife.Great
+										photographic experience.
+									</li>
+									<li>
+										Optional Samburu Village visits.Great cultural experience.
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 3 - SAMBURU TO OLPEJETA.</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast, drive to Olpejeta conservancy 3hrs 30min
+										away.
+									</li>
+									<li>
+										Arrive hotel for lunch and afternoon leisure.Depart for
+										evening safari.Great opportunity to view well conserved
+										Chimpanzees(only place in kenya to view Chimps),The big 5.
+									</li>
+									<li>Drive back to lodge for dinner.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 4 - OLPEJETA TO NAKURU.</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Set off for brief morning safari and drive to Nakuru ALMOST
+										3hrs 30mins safari.
+									</li>
+									<li>Arrive at lodge for late lunch.</li>
+									<li>
+										Set off for evening safari.Great photographic experience
+										while driving along the shores.Good opportunity to see the
+										White Rhino and Flamingoes.
+									</li>
+									<li>Drive to the hotel for dinner at 6pm.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 5 - NAKURU TO NAIVASHA.</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast, set off for a brief morning safari as you
+										drive off the park.
+									</li>
+									<li>Drive 2hrs to Naivasha.</li>
+									<li>
+										Arrive hotel for early lunch and set off for boat safari and
+										crescent island safari walk.Great fun on the boat safari,
+										great for birding ,incredible photographic experience.
+									</li>
+									<li>Drive to the hotel for dinner and rest.</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 6 - NAKURU TO MAASAI MARA</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										After breakfast, head South to the Maasai Mara via Mau
+										route.Enjoy breathtaking wheat and maize plantations as you
+										drive to Mara.
+									</li>
+									<li>Arrive Maasai Mara after driving for around 3hrs.</li>
+									<li>
+										Optional Maasai village visit when arriving of leaving the
+										Mara.Great cultural experience learning Maasai culture.
+									</li>
+									<li>Drive to the hotel for lunch.</li>
+									<li>
+										Set off for evening safari.Drive to the camp/lodge for
+										dinner and bed.
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">
+									DAY 7 - FULL DAY SAFARI IN MAASAI MARA
+								</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Full day safari from morning till afternoon with packed
+										lunch or Morning/evening safari(great for sunrise and
+										sundowner)
+									</li>
+								</ul>
+							</div>
+							<div class="py-4">
+								<h4 class="font-semibold">DAY 8 - DRIVE TO NAIROBI</h4>
+								<ul class="space-y-2 mt-4">
+									<li>
+										Check out after breakfast and drive to Nairobi for about
+										4hrs 30mins.
+									</li>
+									<li>Transfer to airport, Fly home.</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item card w-full sm:w-96 bg-base-100 shadow-xl">
+				<div class="card w-full bg-base-100 shadow-md">
 					<figure>
 						<img
 							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_2003_hkinyq.jpg"
@@ -232,7 +590,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="carousel-item card w-full sm:w-96 bg-base-100 shadow-xl">
+				<div class="card w-full bg-base-100 shadow-md">
 					<figure>
 						<img
 							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529849/bundutrek-safaris/_MG_4671_rctxnf.jpg"
@@ -252,7 +610,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="carousel-item card w-full sm:w-96 bg-base-100 shadow-xl">
+				<div class="card w-full bg-base-100 shadow-md">
 					<figure>
 						<img
 							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683523914/bundutrek-safaris/mara-161_20.36.35_ze7lo4.jpg"
@@ -265,6 +623,24 @@
 						</h2>
 						<div class="badge badge-success">
 							<span class="text-white">12 days</span>
+						</div>
+						<p class="py-4">
+							We will examine in detail the wild fauna and flora of the desert,
+							get acquainted with many mammals and not only.
+						</p>
+					</div>
+				</div>
+				<div class="card w-full bg-base-100 shadow-md">
+					<figure>
+						<img
+							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528314/bundutrek-safaris/_MG_9338_kks7ee.jpg"
+							alt="Wild safaris"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title text-sm sm:text-lg">Tusk Tales</h2>
+						<div class="badge badge-success">
+							<span class="text-white">15 days</span>
 						</div>
 						<p class="py-4">
 							We will examine in detail the wild fauna and flora of the desert,
@@ -869,8 +1245,9 @@
 		<script>
 			const navLinks = document.querySelector('.nav-links');
 			function onToggleMenu(e) {
-				e.name = e.name === 'menu' ? 'close' : 'menu';
-				navLinks.classList.toggle('top-[9%]');
+				e.name = e.name === 'menu' ? 'close-outline' : 'menu';
+				navLinks.classList.toggle('top-[-600%]');
+				navLinks.classList.toggle('top-[100%]');
 			}
 
 			const currentDate = new Date();
@@ -880,5 +1257,6 @@
 				'&copy;' + year + '&nbsp; Bundutrek Safaris. Tours & safaris';
 		</script>
 		<script src="./scripts/whatsapp.js"></script>
+		<script src="./scripts/index.js"></script>
 	</body>
 </html>
