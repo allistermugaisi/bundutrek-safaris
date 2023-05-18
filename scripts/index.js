@@ -1,4 +1,5 @@
 let slideImg = document.getElementById('slideImg');
+let landcruiserSlideImg = document.getElementById('landcruiserSlideImg');
 
 const images = new Array(
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683523811/bundutrek-safaris/mara-164_fti9zt.jpg',
