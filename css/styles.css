@@ -164,8 +164,6 @@ html {
 	border-radius: 1rem;
 }
 
-/* Carousel Landing */
-
 /* Landrover & Landcruiser carousel */
 @keyframes tonext {
 	75% {
@@ -272,13 +270,6 @@ html {
 	background-blend-mode: multiply;
 	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684949071/bundutrek-safaris/WhatsApp_Image_2023-05-22_at_21.05.07_2_nakeqb.jpg');
 }
-.carousel__slide_1:nth-child(1) {
-	background-size: cover;
-	background-color: rgba(43, 63, 105, 0.5);
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
-	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684364756/bundutrek-safaris/IMG_0292_bz4xwn.jpg');
-}
 .carousel__slide:nth-child(1):before {
 	content: '';
 	position: absolute;
@@ -289,6 +280,14 @@ html {
 	color: #fff;
 	font-size: 3em;
 	font-weight: bold;
+}
+
+.carousel__slide_1:nth-child(1) {
+	background-size: cover;
+	background-color: rgba(43, 63, 105, 0.5);
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684364756/bundutrek-safaris/IMG_0292_bz4xwn.jpg');
 }
 .carousel__slide_1:nth-child(1):before {
 	content: '';
@@ -310,14 +309,6 @@ html {
 	background-repeat: no-repeat;
 	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684949049/bundutrek-safaris/WhatsApp_Image_2023-05-22_at_21.05.07_1_ra9hgo.jpg');
 }
-.carousel__slide_1:nth-child(2) {
-	background-size: contain;
-	background-position: center;
-	background-color: rgba(43, 63, 105, 0.5);
-	background-blend-mode: multiply;
-	background-repeat: no-repeat;
-	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684364756/bundutrek-safaris/IMG_0297_hfliip.jpg');
-}
 .carousel__slide:nth-child(2):before {
 	content: '';
 	position: absolute;
@@ -328,6 +319,14 @@ html {
 	color: #fff;
 	font-size: 3em;
 	font-weight: bold;
+}
+
+.carousel__slide_1:nth-child(2) {
+	background-size: cover;
+	background-color: rgba(43, 63, 105, 0.5);
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684393890/bundutrek-safaris/IMG_0309_zme15z.jpg');
 }
 .carousel__slide_1:nth-child(2):before {
 	content: '';
@@ -349,14 +348,6 @@ html {
 	background-repeat: no-repeat;
 	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683529850/bundutrek-safaris/_MG_2495_j3itzc.jpg');
 }
-.carousel__slide_1:nth-child(3) {
-	background-position: center;
-	background-size: contain;
-	background-color: #fff;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684393890/bundutrek-safaris/IMG_0309_zme15z.jpg');
-}
 .carousel__slide:nth-child(3):before {
 	content: '';
 	position: absolute;
@@ -367,6 +358,14 @@ html {
 	color: #fff;
 	font-size: 3em;
 	font-weight: bold;
+}
+
+.carousel__slide_1:nth-child(3) {
+	background-size: cover;
+	background-color: rgba(43, 63, 105, 0.5);
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-image: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684364756/bundutrek-safaris/IMG_0297_hfliip.jpg');
 }
 .carousel__slide_1:nth-child(3):before {
 	content: '';
@@ -389,8 +388,23 @@ html {
 	scroll-snap-align: center;
 }
 
+.carousel__snapper_1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: center;
+}
+
 @media (hover: hover) {
 	.carousel__snapper {
+		animation-name: tonext, snap;
+		animation-timing-function: ease;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	.carousel__snapper_1 {
 		animation-name: tonext, snap;
 		animation-timing-function: ease;
 		animation-duration: 4s;
@@ -400,16 +414,27 @@ html {
 	.carousel__slide:last-child .carousel__snapper {
 		animation-name: tostart, snap;
 	}
+	.carousel__slide_1:last-child .carousel__snapper_1 {
+		animation-name: tostart, snap;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
 	.carousel__snapper {
 		animation-name: none;
 	}
+	.carousel__snapper_1 {
+		animation-name: none;
+	}
 }
 
 .carousel:hover .carousel__snapper,
 .carousel:focus-within .carousel__snapper {
+	animation-name: none;
+}
+
+.carousel_1:hover .carousel__snapper_1,
+.carousel_1:focus-within .carousel__snapper_1 {
 	animation-name: none;
 }
 
@@ -442,6 +467,21 @@ html {
 .carousel::after,
 .carousel__prev,
 .carousel__next {
+	position: absolute;
+	top: 0;
+	margin-top: 37.5%;
+	width: 4rem;
+	height: 4rem;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	font-size: 0;
+	outline: 0;
+}
+
+.carousel_1::before,
+.carousel_1::after,
+.carousel__prev_1,
+.carousel__next_1 {
 	position: absolute;
 	top: 0;
 	margin-top: 37.5%;
