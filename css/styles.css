@@ -83,7 +83,7 @@ html {
 
 #slideImg {
 	width: 100%;
-	height: auto;
+	height: 75vh;
 	object-fit: cover;
 	animation: zoom 3s linear infinite;
 	transition: all 3s ease-out;
@@ -210,7 +210,7 @@ html {
 	}
 }
 
-.carousel {
+.carousel_2 {
 	position: relative;
 	padding-top: 75%;
 	filter: drop-shadow(0 0 10px #0003);
@@ -428,8 +428,8 @@ html {
 	}
 }
 
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
+.carousel_2:hover .carousel__snapper,
+.carousel_2:focus-within .carousel__snapper {
 	animation-name: none;
 }
 
@@ -463,8 +463,8 @@ html {
 	transition: transform 0.1s;
 }
 
-.carousel::before,
-.carousel::after,
+.carousel_2::before,
+.carousel_2::after,
 .carousel__prev,
 .carousel__next {
 	position: absolute;
