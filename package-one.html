@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- ============== Font awesome ============= -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		/>
+
+		<!-- Leaflet css -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+			integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+			crossorigin=""
+		/>
+
+		<title>Bundutrek Safaris</title>
+	</head>
+	<body>
+		<header class="relative px-7 md:px-0">
+			<nav
+				class="nav fixed z-40 top-0 left-0 w-screen bg-white bg-opacity-30 shadow-sm"
+			>
+				<div
+					class="flex justify-between items-center container mx-auto px-7 sm:px-0"
+				>
+					<div class="py-2">
+						<img
+							class="w-56 cursor-pointer z-10"
+							src="https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684447540/bundutrek-safaris/minion_b1y7wf.png"
+							alt="logo"
+						/>
+					</div>
+					<div
+						class="z-40 nav-links shadow-md md:shadow-none rounded-b-2xl duration-500 md:static absolute bg-[#FFDCC8] md:bg-transparent bg-opacity-100 md:bg-opacity-0 md:min-h-fit min-h-[40vh] left-0 top-[-600%] md:w-auto w-full flex items-center px-5"
+					>
+						<ul
+							class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
+						>
+							<li>
+								<a
+									class="text-black text-sm sm:text-base hover:opacity-80"
+									href="/"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									class="text-black text-sm sm:text-base hover:opacity-80"
+									href="about.html"
+									>About us</a
+								>
+							</li>
+							<li>
+								<a
+									class="text-black text-sm sm:text-base hover:opacity-80"
+									href="/#popular-trips"
+									>Popular trips</a
+								>
+							</li>
+							<li>
+								<a
+									class="text-black text-sm sm:text-base hover:opacity-80"
+									href="/blog.html"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a
+									class="text-black text-sm sm:text-base hover:opacity-80"
+									href="/contact.html"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="flex items-center gap-6">
+						<ion-icon
+							onclick="onToggleMenu(this)"
+							name="menu"
+							class="text-3xl cursor-pointer md:hidden text-black"
+						></ion-icon>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="bg-green-500 mt-20 py-14 px-7 sm:px-0">
+			<div class="container mx-auto">
+				<div>
+					<h2 class="text-2xl md:text-6xl tracking-wide font-semibold">
+						Maasai Mara WildBeest Migration
+					</h2>
+				</div>
+				<div class="border-2 border-red-500 w-10 my-6"></div>
+				<div class="grid md:grid-cols-3">
+					<div class="">
+						<ul id="tabs" class="flex flex-col pt-2 px-1 w-full">
+							<li
+								class="px-4 text-white text-lg uppercase py-2 border-r-2 border-red-500"
+							>
+								<a id="default-tab" href="#first">Highlights</a>
+							</li>
+							<li class="px-4 text-white text-lg uppercase py-2">
+								<a href="#second">Itinerary</a>
+							</li>
+							<li class="px-4 text-white text-lg uppercase py-2">
+								<a href="#third">Includes/Excludes</a>
+							</li>
+						</ul>
+					</div>
+					<div class="md:col-span-2">
+						<div id="tab-contents">
+							<div id="first" class="p-4">
+								<h4 class="text-white text-4xl">Highlights</h4>
+								<p class="text-white font-light pt-4 text-lg">
+									Famous for the annual Wildebeest migration, the Maasai Mara is
+									regarded as Kenya’s best game viewing location. The migration
+									alone, involves over 2 million animals arriving in July from
+									Serengeand departing in November. A wide variety of animals
+									rome across the never ending 1510km2 on their natural
+									habitats. Great cultural experiences interacting with the
+									local Maasai people. Great birding and photographic
+									opportunity.
+								</p>
+							</div>
+							<div id="second" class="hidden p-4">
+								<h4 class="text-white text-2xl md:text-4xl">Itinerary</h4>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">DAY 1 - NAIROBI TO MAASAI MARA</h4>
+									<ul class="space-y-2 mt-4">
+										<li>
+											Drive South Western through the famous Rift Valley to the
+											Maasai Mara.
+										</li>
+										<li>Arrive Mara after 4hrs of drive-in time for lunch.</li>
+										<li>
+											After lunch, depart for evening safari, get back to the
+											hotel after sunset for early supper and bed.
+										</li>
+									</ul>
+								</div>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">DAY 2 - MAASAI MARA FULL DAY</h4>
+									<ul class="space-y-2 mt-4">
+										<li>
+											After breakfast, sett off for full day safari with packed
+											lunch.
+										</li>
+										<li>
+											Visit the famous Mara river that hosts the Annual
+											migration
+										</li>
+										<li>Great bush picnic experience</li>
+										<li>Return to the hotel at around 3pm</li>
+										<li>
+											Refresh after safari, entertainment and early dinner and
+											bed
+										</li>
+									</ul>
+								</div>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">
+										DAY 3 - SUNRISE AND SUNDOWNER SAFARI.
+									</h4>
+									<ul class="space-y-2 mt-4">
+										<li>
+											Set off for morning sunrise safari and evening
+											safari.Great for animals sightings when sun is not very
+											hot
+										</li>
+										<li>Great photographic experience.</li>
+									</ul>
+								</div>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">
+										DAY 4 - MAASAI MARA TO NAIROBIAfter breakfast, set off for a
+										quick safari as you exit the reserve.
+									</h4>
+									<ul class="space-y-2 mt-4">
+										<li>
+											After breakfast, set off for brief morning safari as you
+											exit the reserve.
+										</li>
+										<li>
+											Stop over the Maasai village and get the chance to
+											experience Maasai culture.Great cultural experience.
+											(Optional)
+										</li>
+										<li>Drive to Nairobi, fly home.</li>
+									</ul>
+								</div>
+							</div>
+							<div id="third" class="hidden p-4">
+								<h4 class="text-white text-2xl md:text-4xl">
+									Includes/Excludes
+								</h4>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">PACKAGE INCLUDES</h4>
+									<ul class="space-y-2 mt-4">
+										<li>Park entrance fees</li>
+										<li>Accommodation in comfortable luxurious lodge/hotel</li>
+										<li>Transportation in a Safari 4wd Jeep</li>
+										<li>Drinking water throughout safari</li>
+									</ul>
+								</div>
+								<div class="py-4 text-white">
+									<h4 class="font-semibold">PACKAGES EXCLUDES</h4>
+									<ul class="space-y-2 mt-4">
+										<li>Driver’s tip.( Atleast 10 USD per day)</li>
+										<li>Village visits</li>
+										<li>Beverages/drinks</li>
+										<li>Photography</li>
+										<li>Boat rides</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-[#FFDCC8] mt-4 py-8 min-h-16">
+			<div
+				class="container mx-auto flex flex-col md:flex-row justify-between px-7 md:px-0"
+			>
+				<div>
+					<h3 class="text-3xl">Bundutrek Safaris</h3>
+				</div>
+				<div class="mt-6 md:mt-0">
+					<ul
+						class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
+					>
+						<li class="text-[#000] hover:opacity-80"><a href="/">Home</a></li>
+						<li class="text-[#000] hover:opacity-80">
+							<a href="/about.html">About us</a>
+						</li>
+						<li class="text-[#000] hover:opacity-80">
+							<a href="/#popular-trips">Popular trips</a>
+						</li>
+						<li class="text-[#000] hover:opacity-80">
+							<a href="/blog.html">Blog</a>
+						</li>
+						<li class="text-[#000] hover:opacity-80">
+							<a href="/contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr class="container mx-auto my-4 border-black" />
+			<div
+				class="container mx-auto flex flex-col md:flex-row justify-between px-7 md:px-0"
+			>
+				<span id="copyright" class="text-sm"></span>
+				<div class="text-sm space-x-4">
+					<span>
+						<a href="#">Terms of service</a>
+					</span>
+					<span>
+						<a href="#">Privacy policy</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<div id="whatsapp-chat" class="hide">
+			<div class="header-chat">
+				<div class="head-home">
+					<div class="info-avatar">
+						<img src="" />
+					</div>
+					<p>
+						<span class="whatsapp-name">Bundutrek Safaris</span><br /><small
+							>Typically replies within an hour</small
+						>
+					</p>
+				</div>
+				<div class="get-new hide">
+					<div id="get-label"></div>
+					<div id="get-nama"></div>
+				</div>
+			</div>
+			<div class="home-chat"></div>
+			<div class="start-chat">
+				<div
+					pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png"
+					class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body"
+				>
+					<div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
+						<div
+							style="opacity: 0"
+							class="WhatsappDots__Component-pks5bf-0 eJJEeC"
+						>
+							<div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
+								<div
+									class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax"
+								></div>
+								<div
+									class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz"
+								></div>
+								<div
+									class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt"
+								></div>
+							</div>
+						</div>
+						<div
+							style="opacity: 1"
+							class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq"
+						>
+							<div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">
+								Safari Agent
+							</div>
+							<div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">
+								Hi there 👋<br /><br />How can I help you?
+							</div>
+							<div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">1:40</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="blanter-msg">
+					<textarea
+						id="chat-input"
+						placeholder="Write a response"
+						maxlength="120"
+						row="1"
+					></textarea>
+					<a href="javascript:void;" id="send-it">
+						<svg viewBox="0 0 448 448">
+							<path d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div id="get-number"></div>
+			<a class="close-chat" href="javascript:void">×</a>
+		</div>
+
+		<a class="blantershow-chat" href="javascript:void" title="Show Chat">
+			<svg width="20" viewBox="0 0 24 24">
+				<defs />
+				<path
+					fill="#eceff1"
+					d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"
+				/>
+				<path
+					fill="#4caf50"
+					d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"
+				/>
+				<path
+					fill="#fafafa"
+					d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"
+				/>
+			</svg>
+			Chat with Us
+		</a>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+		<!-- Script is similar to the rest of the pages except index.html -->
+		<script>
+			const navLinks = document.querySelector('.nav-links');
+			function onToggleMenu(e) {
+				e.name = e.name === 'menu' ? 'close' : 'menu';
+				navLinks.classList.toggle('top-[-600%]');
+				navLinks.classList.toggle('top-[100%]');
+			}
+
+			const currentDate = new Date();
+			const year = currentDate.getFullYear();
+
+			document.getElementById('copyright').innerHTML =
+				'&copy;' + year + '&nbsp; Bundutrek Safaris. Tours & safaris';
+		</script>
+		<script src="./scripts/whatsapp.js"></script>
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>
