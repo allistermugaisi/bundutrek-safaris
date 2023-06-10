@@ -1,5 +1,5 @@
 module.exports = {
-	content: ['./*.html'],
+	content: ['./*.html', './node_modules/flowbite/**/*.js'],
 	theme: {
 		screens: {
 			sm: '480px',
@@ -13,6 +13,9 @@ module.exports = {
 				darkBlue: '#2B3F69',
 			},
 		},
+	},
+	daisyui: {
+		themes: ['light'],
 	},
 	plugins: [require('daisyui'), require('flowbite/plugin')],
 };
