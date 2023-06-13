@@ -3,11 +3,12 @@ let landcruiserSlideImg = document.getElementById('landcruiserSlideImg');
 
 const images = new Array(
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1686608771/bundutrek-safaris/_MG_2825_pjmleh.jpg',
-	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-130_ydnvw4.jpg',
-	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528315/bundutrek-safaris/mara-22_xfrlbx.jpg',
+	'https://res.cloudinary.com/dgisuffs0/image/upload/v1684393890/bundutrek-safaris/IMG_0309_zme15z.jpg',
+	// 'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683525739/bundutrek-safaris/mara-130_ydnvw4.jpg',
+	// 'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528315/bundutrek-safaris/mara-22_xfrlbx.jpg',
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683270724/bundutrek-safaris/_MG_4886-2_ay3goq.jpg',
-	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528315/bundutrek-safaris/mara-26_aox8et.jpg',
-	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683544557/bundutrek-safaris/_MG_1963_gltorp.jpg',
+	// 'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683528315/bundutrek-safaris/mara-26_aox8et.jpg',
+	// 'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683544557/bundutrek-safaris/_MG_1963_gltorp.jpg',
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1683270722/bundutrek-safaris/39b756_46f36f46f87744688c0a12fa5f97b0f1_mv2_d_4996_3129_s_4_2.jpg_sgmz87.webp',
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1684949015/bundutrek-safaris/WhatsApp_Image_2023-05-22_at_21.05.07_nmz39l.jpg',
 	'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1686428600/bundutrek-safaris/14beff4c-7fdc-4c5c-acd7-d9931e14221b_w6srd8.jpg',
